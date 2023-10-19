@@ -12,9 +12,9 @@ class CategoryTyped:
 class PassthroughExecute:
     FUNCTION = "execute"
 
-    def execute(self, *values: T) -> tuple[T, ...] | None:
-        if values:
-            return tuple(values)
+    def execute(self, **kwargs: T) -> tuple[T, ...] | None:
+        if kwargs:
+            return tuple(kwargs.values())
         return None
 
 
