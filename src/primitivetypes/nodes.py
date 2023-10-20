@@ -4,6 +4,8 @@ from .base import Node, InputDict
 
 T = TypeVar("T")
 
+ABS_MAX = 1125899906842624
+
 
 class CategoryTyped:
     CATEGORY = "utils/Primitive Types"
@@ -23,7 +25,7 @@ class Int(PassthroughExecute, CategoryTyped, Node):
     def INPUT_TYPES(cls) -> InputDict:
         return dict(
             required=dict(
-                value=("INT", dict(default=0, step=1, display="number"))
+                value=("INT", dict(default=0, min=-ABS_MAX, max=ABS_MAX, step=1, display="number"))
             )
         )
 
@@ -35,7 +37,7 @@ class Float(PassthroughExecute, CategoryTyped, Node):
     def INPUT_TYPES(cls) -> InputDict:
         return dict(
             required=dict(
-                value=("FLOAT", dict(default=0, min=0, max=4096, step=1, display="number"))
+                value=("FLOAT", dict(default=0, min=-ABS_MAX, max=ABS_MAX, step=1, display="number"))
             )
         )
 
