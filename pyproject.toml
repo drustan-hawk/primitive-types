@@ -1,0 +1,14 @@
+[project]
+name = "primitive-types"
+description = "Small collection of typed primitive nodes."
+version = "1.0.0"
+license = "LICENSE"
+
+[project.urls]
+Repository = "https://github.com/drustan-hawk/primitive-types"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "drustan-hawk"
+DisplayName = "primitive-types"
+Icon = ""
