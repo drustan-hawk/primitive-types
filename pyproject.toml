@@ -1,6 +1,6 @@
 [project]
 name = "primitive-types"
-description = "This repository contains typed primitives for ComfyUI. The motivation for these primitives is that the standard primitive node cannot be routed."
+description = "Small collection of typed primitive nodes."
 version = "1.0.0"
 license = "LICENSE"
 
@@ -9,6 +9,6 @@ Repository = "https://github.com/drustan-hawk/primitive-types"
 #  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
-PublisherId = ""
+PublisherId = "drustan-hawk"
 DisplayName = "primitive-types"
 Icon = ""
