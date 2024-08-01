@@ -2,7 +2,7 @@
 name = "primitive-types"
 description = "Small collection of typed primitive nodes."
 version = "1.0.0"
-license = "LICENSE"
+license = { file = "LICENSE" }
 
 [project.urls]
 Repository = "https://github.com/drustan-hawk/primitive-types"
